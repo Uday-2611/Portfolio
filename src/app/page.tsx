@@ -79,8 +79,8 @@ function Page() {
     <div className='relative w-full text-[var(--white)]'>
       <Navbar />
 
-      <div className='container mx-auto px-4 py-30'>
-        <h1 className='text-8xl font-["Archia"] mb-12'>
+      <div className='max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 py-30'>
+        <h1 className='text-4xl sm:text-6xl md:text-8xl font-["Archia"] mb-12'>
           Web Developer
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
@@ -116,7 +116,7 @@ function Page() {
         </div>
       </div>
 
-      <div className='container mx-auto px-4'>
+      <div className='max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
           <div className='md:sticky md:top-24 h-fit'>
             <nav className='flex flex-col gap-4'>
@@ -269,9 +269,9 @@ function Page() {
                     </div>
                   )}
                   <button 
-                    type="submit"
+                    type="submit" 
                     disabled={isLoading}
-                    className={`w-full p-3 bg-[var(--white)] text-[var(--primary)] font-["AeonikLight"] rounded-sm hover:bg-[var(--white)]/90 transition-colors duration-300 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    className='w-full sm:w-auto px-6 py-3 bg-[var(--white)] text-[var(--primary)] font-["Archia"] hover:bg-[var(--white)]/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4'
                   >
                     {isLoading ? 'Sending...' : 'Send Message'}
                   </button>

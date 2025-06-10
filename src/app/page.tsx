@@ -177,13 +177,13 @@ function Page() {
                 <ProjectCard
                   title="Biblio"
                   description="Buy,and sell second-hand books with ease"
-                  image="/images/biblio.png"
+                  image="/images/biblio.jpg"
                   githubLink="https://github.com/Uday-2611/PageTurner.git"
                 />
                 <ProjectCard
                   title="Strada"
                   description=" Your ride, your rules. Cars and bikes, just a click away."
-                  image="/images/strada.png"
+                  image="/images/strada.jpg"
                   githubLink="https://github.com/yourusername/bookbid"
                 />
               </div>

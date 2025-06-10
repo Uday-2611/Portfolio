@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import 'remixicon/fonts/remixicon.css';
+
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/ArchiaRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/fonts/AeonikRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AeonikLight';
+  src: url('/fonts/AeonikLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: #000;
+  --white: #fff;
+  --gray: #262629;
+  --blackSecondary: #0a0a0a;
+  --font-archia: 'Archia', sans-serif;
+  --font-aeonik: 'Aeonik', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon:hover {
+  transform: scale(1.01);
+}
+

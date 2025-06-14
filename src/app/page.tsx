@@ -103,7 +103,7 @@ function Page() {
                 <span>GitHub</span>
               </div>
             </Link>
-            <Link href="https://drive.google.com/file/d/1vENjT6cfdgjn7WIPHl6gDUHQSdVTeYDb/view?usp=drive_link">
+            <Link href="https://drive.google.com/file/d/1fTjjAwByBFS7bqp1exQwdFekR23VX0Bq/view?usp=sharing">
               <div className='flex items-center gap-2'>
                 <i className="ri-article-line"></i>
                 <span>Resume</span>

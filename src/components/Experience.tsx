@@ -9,13 +9,7 @@ interface ExperienceProps {
   image?: string;
 }
 
-const Experience: React.FC<ExperienceProps> = ({
-  company,
-  position,
-  duration,
-  responsibilities,
-  image,
-}) => {
+const Experience: React.FC<ExperienceProps> = ({ company, position, duration, responsibilities, image, }) => {
   return (
     <div className='w-full sm:w-[80vw] md:w-[60vw] lg:w-[40vw] p-4 sm:p-6 border border-[var(--gray)] rounded-sm bg-[var(--blackSecondary)]'>
       <div className='flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4'>

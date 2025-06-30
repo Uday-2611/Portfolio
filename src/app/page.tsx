@@ -149,22 +149,13 @@ function Page() {
             <section id="experience" className='mb-24 scroll-mt-24'>
               <h2 className='text-4xl font-["Archia"] mb-8'>Experience</h2>
               <div className='flex flex-col gap-8'>
-                <Experience
-                  company="Celebal Technologies"
-                  position="Summer Intern"
-                  duration="May 2025 - July 2025"
-                  image="/images/celebal.jpg"
-                  responsibilities={[
+                <Experience company="Celebal Technologies" position="Summer Intern" duration="May 2025 - July 2025" image="/images/celebal.jpg" responsibilities={[
                     "Completed a remote, industry-oriented internship focused on React JS development.",
                     "Independently built and deployed a project applying React concepts such as components, hooks, state management, and routing.",
                     "Gained practical experience in designing and developing interactive, responsive web interfaces.",
                     "Enhanced technical proficiency and project management skills through hands-on, real-world application.",
                   ]} />
-                <Experience
-                  company="CodeAlpha"
-                  position="Front End Intern"
-                  duration="June 2024 - July 2024"
-                  responsibilities={[
+                <Experience company="CodeAlpha" position="Front End Intern" duration="June 2024 - July 2024" responsibilities={[
                     "Contributed to hands-on projects at CodeAlpha, enhancing skills in web development",
                     "Gained practical experience through tasks such as building interactive web applications",
                   ]} />
@@ -174,36 +165,16 @@ function Page() {
             <section id="projects" className='mb-24 scroll-mt-24'>
               <h2 className='text-4xl font-["Archia"] mb-8'>Projects</h2>
               <div className='space-y-8'>
-                <ProjectCard
-                  title="Biblio"
-                  description="Buy,and sell second-hand books with ease"
-                  image="/images/biblio.jpg"
-                  githubLink="https://github.com/Uday-2611/PageTurner.git"
-                />
-                <ProjectCard
-                  title="Strada"
-                  description=" Your ride, your rules. Cars and bikes, just a click away."
-                  image="/images/strada.jpg"
-                  githubLink="https://github.com/yourusername/bookbid"
-                />
+                <ProjectCard title="Biblio" description="Buy,and sell second-hand books with ease" image="/images/biblio.png" githubLink="https://github.com/Uday-2611/PageTurner.git" />
+                <ProjectCard title="Strada" description=" Your ride, your rules. Cars and bikes, just a click away." image="/images/strada.png" githubLink="https://github.com/yourusername/bookbid" />
               </div>
             </section>
 
             <section id="education" className='mb-24 scroll-mt-24'>
               <h2 className='text-4xl font-["Archia"] mb-8'>Education</h2>
               <div className='flex flex-col gap-8'>
-                <Education
-                  institution="Manipal University Jaipur"
-                  degree="Bachelor of Technology in Computer Science"
-                  duration="2022 - 2026"
-                  image="/images/manipal.webp"
-                />
-                <Education
-                  institution="BVB Vidyashram"
-                  degree="Higher Secondary Education"
-                  duration="2020 - 2022"
-                  image="/images/BVB.png"
-                />
+                <Education institution="Manipal University Jaipur" degree="Bachelor of Technology in Computer Science" duration="2022 - 2026" image="/images/manipal.webp" />
+                <Education institution="BVB Vidyashram" degree="Higher Secondary Education" duration="2020 - 2022" image="/images/BVB.png" />
               </div>
             </section>
 
@@ -213,66 +184,26 @@ function Page() {
                 <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                   <div className='flex flex-col gap-2'>
                     <label htmlFor="name" className='text-[var(--white)]/90 font-["AeonikLight"]'>Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50'
-                      placeholder='Enter your name'
-                    />
+                    <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50' placeholder='Enter your name' />
                   </div>
                   <div className='flex flex-col gap-2'>
                     <label htmlFor="email" className='text-[var(--white)]/90 font-["AeonikLight"]'>Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50'
-                      placeholder='Enter your email'
-                    />
+                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50' placeholder='Enter your email' />
                   </div>
                   <div className='flex flex-col gap-2'>
                     <label htmlFor="subject" className='text-[var(--white)]/90 font-["AeonikLight"]'>Subject</label>
-                    <input 
-                      type="text" 
-                      id="subject" 
-                      name="subject" 
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50'
-                      placeholder='Enter subject'
-                    />
+                    <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50' placeholder='Enter subject' />
                   </div>
                   <div className='flex flex-col gap-2'>
                     <label htmlFor="message" className='text-[var(--white)]/90 font-["AeonikLight"]'>Message</label>
-                    <textarea 
-                      id="message" 
-                      name="message" 
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={6}
-                      className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50 resize-none'
-                      placeholder='Enter your message'
-                    />
+                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={6} className='w-full p-3 bg-[var(--black)] border border-[var(--gray)] rounded-sm text-[var(--white)] focus:outline-none focus:border-[var(--white)]/50 resize-none' placeholder='Enter your message' />
                   </div>
                   {status.message && (
                     <div className={`p-3 rounded-sm ${status.type === 'success' ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'}`}>
                       {status.message}
                     </div>
                   )}
-                  <button 
-                    type="submit" 
-                    disabled={isLoading}
-                    className='w-full sm:w-auto px-6 py-3 bg-[var(--white)] text-[var(--primary)] font-["Archia"] hover:bg-[var(--white)]/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4'
-                  >
+                  <button type="submit" disabled={isLoading} className='w-full sm:w-auto px-6 py-3 bg-[var(--white)] text-[var(--primary)] font-["Archia"] hover:bg-[var(--white)]/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-4'>
                     {isLoading ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>

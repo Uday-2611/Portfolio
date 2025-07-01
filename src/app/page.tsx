@@ -6,6 +6,7 @@ import Experience from '@/components/Experience'
 import ProjectCard from '@/components/ProjectCard'
 import Education from '@/components/Education'
 import React, { useState } from 'react'
+import { LavaLamp } from '@/components/fluid-blob'
 
 const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
   e.preventDefault();
@@ -77,6 +78,9 @@ function Page() {
 
   return (
     <div className='relative w-full text-[var(--white)]'>
+      <div className="fixed inset-0 -z-10 w-full h-full">
+        <LavaLamp />
+      </div>
       <Navbar />
 
       <div className='max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 py-30'>
@@ -111,7 +115,7 @@ function Page() {
             </Link>
           </div>
           <div className='md:col-span-2'>
-            <p className='font-["AeonikLight"] text-2xl text-[#9f9f9f] '>Developer with expertise in creating engaging, user-centric web experiences, combining technical skills with a creative perspective inspired by history and art. Skilled in full-stack development, and AI, delivering innovative solutions that seamlessly integrate technology and creativity.</p>
+            <p className='font-["AeonikLight"] text-2xl  '>Developer with expertise in creating engaging, user-centric web experiences, combining technical skills with a creative perspective inspired by history and art. Skilled in full-stack development, and AI, delivering innovative solutions that seamlessly integrate technology and creativity.</p>
           </div>
         </div>
       </div>

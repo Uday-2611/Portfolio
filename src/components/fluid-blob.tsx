@@ -116,7 +116,7 @@ void main() {
 `;
 
 function LavaLampShader() {
-  const meshRef = useRef();
+  const meshRef = useRef<THREE.Mesh>(null);
   const { size } = useThree();
   
   const uniforms = useMemo(() => ({

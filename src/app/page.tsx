@@ -165,8 +165,9 @@ function Page() {
             <section id="projects" className='mb-24 scroll-mt-24'>
               <h2 className='text-4xl font-["Archia"] mb-8'>Projects</h2>
               <div className='space-y-8'>
-                <ProjectCard title="Biblio" description="Buy,and sell second-hand books with ease" image="/images/biblio.png" githubLink="https://github.com/Uday-2611/PageTurner.git" />
-                <ProjectCard title="Strada" description=" Your ride, your rules. Cars and bikes, just a click away." image="/images/strada.png" githubLink="https://github.com/yourusername/bookbid" />
+                <ProjectCard title="Biblio" description="Buy,and sell second-hand books with ease" image="/images/biblio.png" githubLink="https://biblio-self-kappa.vercel.app/" />
+
+                <ProjectCard title="Strada" description=" Your ride, your rules. Cars and bikes, just a click away." image="/images/strada.png" githubLink="https://strada-three.vercel.app/" />
               </div>
             </section>
 

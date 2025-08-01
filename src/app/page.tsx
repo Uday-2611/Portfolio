@@ -6,6 +6,14 @@ import Experience from '@/components/Experience'
 import ProjectCard from '@/components/ProjectCard'
 import Education from '@/components/Education'
 import React, { useState } from 'react'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { MorphingText } from '@/components/MorphingText'
 import { LavaLamp } from '@/components/fluid-blob'
 
 const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
@@ -84,38 +92,44 @@ function Page() {
       <Navbar />
 
       <div className='max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 py-30'>
-        <h1 className='text-4xl sm:text-6xl md:text-8xl font-["Archia"] mb-12'>
-          Web Developer
-        </h1>
+        <div className='mb-12'>
+          <h1 className="flex flex-wrap items-center gap-2">
+            <MorphingText
+              texts={["Software Developer", "Web Developer", "App Developer"]}
+              className="text-4xl sm:text-6xl md:text-8xl font-['Archia'] text-[var(--white)]"
+            />
+          </h1>
+
+        </div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
           <div className='flex flex-col gap-4'>
             <Link href="https://www.linkedin.com/in/udayagarwal2611/">
               <div className='flex items-center gap-2'>
-                <i className="ri-linkedin-line"></i>
+
                 <span>LinkedIn</span>
               </div>
             </Link>
             <Link href="https://www.instagram.com/udayy2604/">
               <div className='flex items-center gap-2'>
-                <i className="ri-instagram-line"></i>
+
                 <span>Instagram</span>
               </div>
             </Link>
             <Link href="https://github.com/Uday-2611">
               <div className='flex items-center gap-2'>
-                <i className="ri-github-line"></i>
+
                 <span>GitHub</span>
               </div>
             </Link>
             <Link href="https://drive.google.com/file/d/1fTjjAwByBFS7bqp1exQwdFekR23VX0Bq/view?usp=sharing">
               <div className='flex items-center gap-2'>
-                <i className="ri-article-line"></i>
+
                 <span>Resume</span>
               </div>
             </Link>
           </div>
           <div className='md:col-span-2'>
-            <p className='font-["AeonikLight"] text-2xl  '>Developer with expertise in creating engaging, user-centric web experiences, combining technical skills with a creative perspective inspired by history and art. Skilled in full-stack development, and AI, delivering innovative solutions that seamlessly integrate technology and creativity.</p>
+            <p className='font-["AeonikLight"] text-2xl'>I&apos;m a web and app developer who loves crafting engaging, user-centric experiences! I blend technical skills with a creative perspective inspired by history and art. I appreciate all forms of art like movies and music, which fuels my passion for creating innovative solutions that seamlessly weave together technology and creativity.</p>
           </div>
         </div>
       </div>
@@ -125,8 +139,8 @@ function Page() {
           <div className='md:sticky md:top-24 h-fit'>
             <nav className='flex flex-col gap-4'>
               <Link href="#skills" onClick={(e) => scrollToSection(e, 'skills')}>Skills</Link>
-              <Link href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</Link>
               <Link href="#projects" onClick={(e) => scrollToSection(e, 'projects')}>Projects</Link>
+              <Link href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</Link>
               <Link href="#education" onClick={(e) => scrollToSection(e, 'education')}>Education</Link>
             </nav>
           </div>
@@ -150,28 +164,39 @@ function Page() {
               </div>
             </section>
 
+            <section id="projects" className='mb-24 scroll-mt-24'>
+              <h2 className='text-4xl font-["Archia"] mb-2'>Projects</h2>
+              <p className='text-[var(--white)]/60 font-["AeonikLight"] text-sm mb-6 flex items-center gap-2'>
+                <i className="ri-arrow-right-line"></i>
+                Swipe left to see more
+              </p>
+              <Carousel className="w-full">
+                <CarouselContent>
+                  <CarouselItem>
+                    <ProjectCard title="Biblio" description="Buy,and sell second-hand books with ease" image="/images/biblio.png" githubLink="https://biblio-self-kappa.vercel.app/" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <ProjectCard title="Strada" description=" Your ride, your rules. Cars and bikes, just a click away." image="/images/strada.png" githubLink="https://strada-three.vercel.app/" />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="bg-[var(--white)]/10 hover:bg-[var(--white)]/20 text-[var(--white)] border-[var(--white)]/20" />
+                <CarouselNext className="bg-[var(--white)]/10 hover:bg-[var(--white)]/20 text-[var(--white)] border-[var(--white)]/20" />
+              </Carousel>
+            </section>
+
             <section id="experience" className='mb-24 scroll-mt-24'>
               <h2 className='text-4xl font-["Archia"] mb-8'>Experience</h2>
               <div className='flex flex-col gap-8'>
                 <Experience company="Celebal Technologies" position="Summer Intern" duration="May 2025 - July 2025" image="/images/celebal.jpg" responsibilities={[
-                    "Completed a remote, industry-oriented internship focused on React JS development.",
-                    "Independently built and deployed a project applying React concepts such as components, hooks, state management, and routing.",
-                    "Gained practical experience in designing and developing interactive, responsive web interfaces.",
-                    "Enhanced technical proficiency and project management skills through hands-on, real-world application.",
-                  ]} />
+                  "Completed a remote, industry-oriented internship focused on React JS development.",
+                  "Independently built and deployed a project applying React concepts such as components, hooks, state management, and routing.",
+                  "Gained practical experience in designing and developing interactive, responsive web interfaces.",
+                  "Enhanced technical proficiency and project management skills through hands-on, real-world application.",
+                ]} />
                 <Experience company="CodeAlpha" position="Front End Intern" duration="June 2024 - July 2024" responsibilities={[
-                    "Contributed to hands-on projects at CodeAlpha, enhancing skills in web development",
-                    "Gained practical experience through tasks such as building interactive web applications",
-                  ]} />
-              </div>
-            </section>
-
-            <section id="projects" className='mb-24 scroll-mt-24'>
-              <h2 className='text-4xl font-["Archia"] mb-8'>Projects</h2>
-              <div className='space-y-8'>
-                <ProjectCard title="Biblio" description="Buy,and sell second-hand books with ease" image="/images/biblio.png" githubLink="https://biblio-self-kappa.vercel.app/" />
-
-                <ProjectCard title="Strada" description=" Your ride, your rules. Cars and bikes, just a click away." image="/images/strada.png" githubLink="https://strada-three.vercel.app/" />
+                  "Contributed to hands-on projects at CodeAlpha, enhancing skills in web development",
+                  "Gained practical experience through tasks such as building interactive web applications",
+                ]} />
               </div>
             </section>
 

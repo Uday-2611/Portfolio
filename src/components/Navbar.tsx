@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className='flex justify-center items-center gap-2 md:gap-4'>
                 <h1 className='uppercase text-xl sm:text-2xl md:text-3xl'>Uday Agarwal</h1>
             </div>
-            <Button className='font-light text-sm md:text-base' onClick={scrollToMail}>CONTACT</Button>
+            <button className='bg-[var(--white)] text-[var(--primary)] hover:bg-[#FFC800] hover:text-black px-6 py-2 font-["Aeonik"] text-sm md:text-base transition-colors duration-300' onClick={scrollToMail}>Contact <i className="ri-arrow-right-up-line"></i></button>
         </div>
     )
 }

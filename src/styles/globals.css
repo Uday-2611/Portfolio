@@ -158,8 +158,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
+
+::selection {
+  background-color: #FFC800;
+  color: black;
+}

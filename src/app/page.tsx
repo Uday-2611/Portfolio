@@ -138,17 +138,25 @@ function Page() {
                   description: "Buy and sell second-hand books with ease. A platform connecting book lovers to give their old books a new home.",
                   image: "/images/biblio.png",
                   link: "https://biblio-self-kappa.vercel.app/",
-                  year: "2024",
-                  tags: ["Next.js", "MongoDB", "Tailwind"]
+                  year: "2025",
+                  tags: ["ReactJS", "MongoDB", "ExpressJS"]
                 },
                 {
                   title: "Strada",
                   description: "Your ride, your rules. Cars and bikes, just a click away. A modern vehicle rental platform.",
                   image: "/images/strada.png",
                   link: "https://strada-three.vercel.app/",
-                  year: "2024",
-                  tags: ["React", "Node.js", "Express"]
-                }
+                  year: "2025",
+                  tags: ["NextJS", "Supabase", "Tailwind"]
+                },
+                {
+                  title: "Framix",
+                  description: "Your art, amplified. Sketches and styles, perfectly blended. A modern intelligent design tool.",
+                  image: "/images/framix.png",
+                  link: "https://github.com/Uday-2611/Framix.git",
+                  year: "2025",
+                  tags: ["NextJS", "Convex"]
+                },
               ]} />
             </section>
 

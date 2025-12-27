@@ -134,6 +134,14 @@ function Page() {
               <h2 className='text-5xl md:text-7xl font-["Archia"] font-bold uppercase mb-16'>Projects</h2>
               <ProjectList projects={[
                 {
+                  title: "Crossed",
+                  description: "Meet people who share your places. Discover connections through the cafés, colleges, and hangouts you already love.",
+                  image: "/images/crossed.png",
+                  link: "https://crossed-web.vercel.app/",
+                  year: "2025",
+                  tags: ["React Native", "Expo", "Convex"]
+                },
+                {
                   title: "Biblio",
                   description: "Buy and sell second-hand books with ease. A platform connecting book lovers to give their old books a new home.",
                   image: "/images/biblio.png",
